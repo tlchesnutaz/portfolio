@@ -1,0 +1,11 @@
+.history
+*.local
+*.log
+logs
+.md
+!README.md
+
+Thumbs.db
+
+node_modules/
+temp/
