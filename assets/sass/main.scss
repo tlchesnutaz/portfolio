@@ -17,7 +17,6 @@ $size-header-width: 35%;
 $size-header-pad: 4em;
 
 // Breakpoints.
-
 	@include breakpoints((
 		xlarge:  ( 1281px,  1800px ),
 		large:   ( 981px,   1280px ),
@@ -28,7 +27,6 @@ $size-header-pad: 4em;
 
 // Reset.
 // Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain)
-
 	html, body, div, span, applet, object,
 	iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 	pre, a, abbr, acronym, address, big, cite,
@@ -98,7 +96,6 @@ $size-header-pad: 4em;
 	}
 
 /* Basic */
-
 	// Set box model to border-box.
 	// Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
 		html {
@@ -266,7 +263,6 @@ $size-header-pad: 4em;
 	}
 
 /* Container */
-
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - #{_size(element-margin) * 2});
@@ -307,7 +303,6 @@ $size-header-pad: 4em;
 	}
 
 /* Row */
-
 	.row {
 		@include html-grid(2.5em);
 
@@ -333,7 +328,6 @@ $size-header-pad: 4em;
 	}
 
 /* Section/Article */
-
 	section, article {
 		&.special {
 			text-align: center;
@@ -375,7 +369,6 @@ $size-header-pad: 4em;
 	}
 
 /* Form */
-
 	form {
 		margin: 0 0 _size(element-margin) 0;
 	}
@@ -540,7 +533,6 @@ $size-header-pad: 4em;
 	}
 
 /* Box */
-
 	.box {
 		border-radius: _size(border-radius);
 		border: solid 2px _palette(border);
@@ -561,7 +553,6 @@ $size-header-pad: 4em;
 	}
 
 /* Icon */
-
 	.icon {
 		@include icon;
 		border-bottom: none;
@@ -589,7 +580,6 @@ $size-header-pad: 4em;
 	}
 
 /* Image */
-
 	.image {
 		border-radius: _size(border-radius);
 		border: 0;
@@ -697,7 +687,6 @@ $size-header-pad: 4em;
 	}
 
 /* List */
-
 	ol {
 		list-style: decimal;
 		margin: 0 0 _size(element-margin) 0;
@@ -738,7 +727,6 @@ $size-header-pad: 4em;
 	}
 
 /* Icons */
-
 	ul.icons {
 		cursor: default;
 		list-style: none;
@@ -761,7 +749,6 @@ $size-header-pad: 4em;
 	}
 
 /* Labeled Icons */
-
 	ul.labeled-icons {
 		list-style: none;
 		padding: 0;
@@ -792,7 +779,6 @@ $size-header-pad: 4em;
 	}
 
 /* Actions */
-
 	ul.actions {
 		@include vendor('display', 'flex');
 		cursor: default;
@@ -888,7 +874,6 @@ $size-header-pad: 4em;
 	}
 
 /* Table */
-
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
@@ -964,7 +949,6 @@ $size-header-pad: 4em;
 	}
 
 /* Button */
-
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -1045,7 +1029,6 @@ $size-header-pad: 4em;
 	}
 
 /* Work Item */
-
 	.work-item {
 		margin: 0 0 _size(element-margin) 0;
 
@@ -1066,7 +1049,6 @@ $size-header-pad: 4em;
 	}
 
 /* Header */
-
 	#header {
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
@@ -1119,7 +1101,6 @@ $size-header-pad: 4em;
 	}
 
 /* Footer */
-
 	#footer {
 		.icons {
 			margin: (_size(element-margin) * 0.5) 0 0 0;
@@ -1157,7 +1138,6 @@ $size-header-pad: 4em;
 	}
 
 /* Main */
-
 	#main {
 		margin-left: $size-header-width;
 		max-width: 50em + $size-header-pad;
@@ -1178,7 +1158,6 @@ $size-header-pad: 4em;
 	}
 
 /* Poptrox */
-
 	@include keyframes('spin') {
 		0% { @include vendor('transform', 'rotate(0deg)'); }
 		100% { @include vendor('transform', 'rotate(360deg)'); }
@@ -1321,7 +1300,6 @@ $size-header-pad: 4em;
 	}
 
 /* Touch */
-
 	body.is-touch {
 
 		.image {
@@ -1352,11 +1330,9 @@ $size-header-pad: 4em;
 	}
 
 /* XLarge */
-
 	@include breakpoint('<=xlarge') {
 
 		/* Basic */
-
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
@@ -1364,14 +1340,12 @@ $size-header-pad: 4em;
 	}
 
 /* Large */
-
 	@include breakpoint('<=large') {
 
 		$size-header-width: 30%;
 		$size-header-pad: 3em;
 
 		/* Header */
-
 			#header {
 				padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
 				width: $size-header-width;
@@ -1390,7 +1364,6 @@ $size-header-pad: 4em;
 			}
 
 		/* Footer */
-
 			#footer {
 				.copyright {
 					li {
@@ -1404,24 +1377,20 @@ $size-header-pad: 4em;
 			}
 
 		/* Main */
-
 			#main {
 				margin-left: $size-header-width;
 				max-width: none;
 				padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
 				width: calc(100% - #{$size-header-width});
 			}
-
 	}
 
 /* Medium */
-
 	@include breakpoint('<=medium') {
 
 		$size-header-pad: 4em;
 
 		/* Basic */
-
 			h1, h2, h3, h4, h5, h6 {
 				br {
 					display: none;
@@ -1429,7 +1398,6 @@ $size-header-pad: 4em;
 			}
 
 		/* List */
-
 			ul {
 				&.icons {
 					li {
@@ -1441,7 +1409,6 @@ $size-header-pad: 4em;
 			}
 
 		/* Header */
-
 			#header {
 				background-attachment:	scroll;
 				background-position:	top left,	center center;
@@ -1464,7 +1431,6 @@ $size-header-pad: 4em;
 			}
 
 		/* Footer */
-
 			#footer {
 				background-attachment:	scroll;
 				background-color:		_palette(accent2, bg);
@@ -1497,23 +1463,19 @@ $size-header-pad: 4em;
 			}
 
 		/* Main */
-
 			#main {
 				margin: 0;
 				padding: ($size-header-pad * 1.5) $size-header-pad;
 				width: 100%;
 			}
-
 	}
 
 /* Small */
-
 	@include breakpoint('<=small') {
 
 		$size-header-pad: 1.5em;
 
 		/* Basic */
-
 			h1 {
 				font-size: 1.5em;
 			}
@@ -1527,7 +1489,6 @@ $size-header-pad: 4em;
 			}
 
 		/* Section/Article */
-
 			section, article {
 				&.special {
 					text-align: center;
@@ -1543,7 +1504,6 @@ $size-header-pad: 4em;
 			}
 
 		/* List */
-
 			ul {
 				&.labeled-icons {
 					li {
@@ -1557,7 +1517,6 @@ $size-header-pad: 4em;
 			}
 
 		/* Header */
-
 			#header {
 				padding: ($size-header-pad * 1.5) $size-header-pad;
 
@@ -1567,13 +1526,11 @@ $size-header-pad: 4em;
 			}
 
 		/* Footer */
-
 			#footer {
 				padding: ($size-header-pad * 1.5) $size-header-pad;
 			}
 
 		/* Main */
-
 			#main {
 				padding: ($size-header-pad * 1.5) $size-header-pad (($size-header-pad * 1.5) - _size(element-margin)) $size-header-pad;
 
@@ -1584,7 +1541,6 @@ $size-header-pad: 4em;
 			}
 
 		/* Poptrox */
-
 			.poptrox-popup {
 				border-radius: 0;
 
@@ -1595,17 +1551,14 @@ $size-header-pad: 4em;
 					}
 				}
 			}
-
 	}
 
 /* XSmall */
-
 	@include breakpoint('<=xsmall') {
 
 		$size-header-pad: 1.5em;
 
 		/* Header */
-
 			#header {
 				padding: ($size-header-pad * 3) $size-header-pad;
 
@@ -1617,7 +1570,6 @@ $size-header-pad: 4em;
 			}
 
 		/* Footer */
-
 			#footer {
 				.copyright {
 					li {
@@ -1629,5 +1581,4 @@ $size-header-pad: 4em;
 					}
 				}
 			}
-
 	}

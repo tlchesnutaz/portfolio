@@ -27,11 +27,9 @@
 					$this.text() +
 				'</a>'
 			);
-
 		});
 
 		return b.join('');
-
 	};
 
 	/**
@@ -52,7 +50,6 @@
 					$(this[i]).panel(userConfig);
 
 				return $this;
-
 			}
 
 		// Vars.
@@ -112,7 +109,6 @@
 
 							event.preventDefault();
 							event.stopPropagation();
-
 						}
 
 					// Hide.
@@ -130,9 +126,7 @@
 									$this.find('form').each(function() {
 										this.reset();
 									});
-
 						}, config.delay);
-
 				};
 
 			// Vendor fixes.
@@ -172,9 +166,7 @@
 										window.location.href = href;
 
 								}, config.delay + 10);
-
 						});
-
 				}
 
 			// Event: Touch stuff.
@@ -182,7 +174,6 @@
 
 					$this.touchPosX = event.originalEvent.touches[0].pageX;
 					$this.touchPosY = event.originalEvent.touches[0].pageY;
-
 				})
 
 				$this.on('touchmove', function(event) {
@@ -223,7 +214,6 @@
 
 								default:
 									break;
-
 							}
 
 							if (result) {
@@ -233,9 +223,7 @@
 								$this._hide();
 
 								return false;
-
 							}
-
 						}
 
 					// Prevent vertical scrolling past the top or bottom.
@@ -244,9 +232,7 @@
 
 							event.preventDefault();
 							event.stopPropagation();
-
 						}
-
 				});
 
 			// Event: Prevent certain events inside the panel from bubbling.
@@ -261,7 +247,6 @@
 					event.stopPropagation();
 
 					config.target.removeClass(config.visibleClass);
-
 				});
 
 		// Body.
@@ -278,7 +263,6 @@
 					event.stopPropagation();
 
 					config.target.toggleClass(config.visibleClass);
-
 				});
 
 		// Window.
@@ -289,11 +273,9 @@
 
 						if (event.keyCode == 27)
 							$this._hide(event);
-
 					});
 
 		return $this;
-
 	};
 
 	/**
@@ -317,7 +299,6 @@
 					$(this[i]).placeholder();
 
 				return $this;
-
 			}
 
 		// Vars.
@@ -334,7 +315,6 @@
 						i
 							.addClass('polyfill-placeholder')
 							.val(i.attr('placeholder'));
-
 				})
 				.on('blur', function() {
 
@@ -347,7 +327,6 @@
 						i
 							.addClass('polyfill-placeholder')
 							.val(i.attr('placeholder'));
-
 				})
 				.on('focus', function() {
 
@@ -360,7 +339,6 @@
 						i
 							.removeClass('polyfill-placeholder')
 							.val('');
-
 				});
 
 		// Password.
@@ -402,9 +380,7 @@
 
 								i.hide();
 								x.show();
-
 							}
-
 						});
 
 					x
@@ -419,15 +395,12 @@
 							i
 								.show()
 								.focus();
-
 						})
 						.on('keypress', function(event) {
 
 							event.preventDefault();
 							x.val('');
-
 						});
-
 				});
 
 		// Events.
@@ -446,11 +419,8 @@
 
 								i.removeClass('polyfill-placeholder');
 								i.val('');
-
 							}
-
 						});
-
 				})
 				.on('reset', function(event) {
 
@@ -508,14 +478,11 @@
 								default:
 									i.val(i.attr('defaultValue'));
 									break;
-
 							}
 						});
-
 				});
 
 		return $this;
-
 	};
 
 	/**
@@ -577,11 +544,7 @@
 
 						// Unmark element as moved.
 							$e.removeData(key);
-
 					}
-
 			});
-
 	};
-
 })(jQuery);
